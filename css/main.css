@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+nav {
+  border: 1px solid black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(pink));
+  background-image: linear-gradient(to bottom, white, pink);
+}
+
+nav ul {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
+}
+
+nav img {
+  -webkit-transform: translate(70px);
+          transform: translate(70px);
+}
+
+.subrayado {
+  display: inline;
+  position: relative;
+}
+
+.subrayado::before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  background-color: black;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+}
+
+.subrayado:hover::before {
+  width: 100%;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  margin: 50px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.productos__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .productos__img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.productos__descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .productos__descripcion {
+    display: none;
+  }
+}
+
+.productos__parrafo {
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.sectiona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sectiona__img {
+  width: 600px;
+}
+
+.sectiona__p {
+  width: 600px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sectiona__p {
+    display: none;
+  }
+}
+
+h2 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  color: brown;
+}
+
+.footer {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(pink));
+  background-image: linear-gradient(to bottom, white, pink);
+  height: 300px;
+  margin-top: 150px;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__ul {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-150px);
+          transform: translate(-150px);
+  list-style: none;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__nav {
+    -webkit-transform: translate(130px);
+            transform: translate(130px);
+  }
+}
+
+.footer__nav a {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+.footer .footer__redes img {
+  -webkit-transform: translate(150px);
+          transform: translate(150px);
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__redes img {
+    display: none;
+  }
+}
+
+.footer a {
+  list-style: decimal;
+}
+
+#mainPasteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-left: 150px;
+}
+
+.card-title {
+  color: brown;
+}
+
+.card-img-top {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catering__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 150px;
+}
+
+.catering__servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: -100px;
+}
+
+.catering .servicios__descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: translate(-50px, -90px);
+          transform: translate(-50px, -90px);
+  margin-bottom: 100px;
+}
+
+.catering .parrafoServicios1 {
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+}
+
+.catering .parrafoServicios2 {
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
+}
+
+.catering .parrafoServicios3 {
+  -webkit-transform: translate(-30px);
+          transform: translate(-30px);
+}
+
+.catering .parrafoServicios4 {
+  -webkit-transform: translate(60px);
+          transform: translate(60px);
+}
+
+.takeAway__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.takeAway__descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform: translate(20px, -100px);
+          transform: translate(20px, -100px);
+  margin-bottom: 100px;
+}
+
+.takeAway__descripcion .parrafoTakeAway1 {
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
+}
+
+.takeAway__descripcion .parrafoTakeAway3 {
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
+}
+
+.contacto__main {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(pink));
+  background-image: linear-gradient(to bottom, white, pink);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px black solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  margin: auto;
+}
+
+.contacto__text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  padding: 30px;
+}
+
+.contacto__form {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+/*# sourceMappingURL=main.css.map */

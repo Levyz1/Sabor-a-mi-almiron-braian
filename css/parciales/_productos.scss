@@ -1,0 +1,51 @@
+
+ .productos{
+    &__img{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__descripcion{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        @include tablet{
+            display: none;
+        }
+    }
+    &__parrafo{
+        margin-left: 5rem;
+        margin-right: 3rem;
+    }
+ }
+ .sectiona{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+    &__img{
+        width: 600px;
+    }
+    &__p{
+        width: 600px;
+        align-self: center;
+        margin-left: 5rem;
+        @include tablet{
+            display: none;
+        }
+    }
+ }
+ h2{
+     display: grid;
+     place-items: center;
+     margin-bottom: 100px;
+     text-transform: uppercase;
+     color:brown;
+ }
+ 

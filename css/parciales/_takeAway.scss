@@ -1,0 +1,20 @@
+
+.takeAway{
+    &__img{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__descripcion{
+        display: flex;
+        justify-content: space-evenly;
+        transform: translate(20px, -100px);
+        margin-bottom: 100px;
+        .parrafoTakeAway1{
+            transform: translate(-50px);
+        }
+
+        .parrafoTakeAway3{
+            transform: translate(-50px);
+        }
+    }
+}

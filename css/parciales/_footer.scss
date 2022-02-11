@@ -1,0 +1,44 @@
+.footer{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, white, pink);
+    height: 300px;
+    margin-top: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    &__ul{
+        text-decoration: none;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-150px);
+        list-style: none;
+        font-size: 25px;
+        @include tablet{
+            transform: translate(130px);
+        }
+        a{
+            color: black;
+        }
+    }
+    &__logo{
+        @include tablet{
+            display: none;
+        }
+    }
+    .footer__redes img{
+        transform: translate(150px);
+        @include tablet{
+            display: none;
+        }
+    }
+    a{
+        list-style: decimal;
+    }
+}
+

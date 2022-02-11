@@ -1,0 +1,39 @@
+@import "./media-queries";
+
+a{
+   text-decoration: none;
+   letter-spacing: 2px;
+   margin: 10px;
+   padding: 10px;
+   text-transform: uppercase;
+}
+nav{
+   border: 1px solid black;
+   background-image: linear-gradient(to bottom, white, pink);
+   ul{
+      font-size: 30px;
+       display: flex;
+       align-items: center;
+       justify-items: center;
+       transform: translate(-50px);
+   }
+   img{
+       transform: translate(70px);
+   }   
+}
+.subrayado{
+   display: inline;
+   position: relative;
+}
+.subrayado::before {
+   content: "";
+   position: absolute;
+   top: 75%;
+   background-color: black;
+   width: 0%;
+   height: 3px;
+   transition: width 1s ease-out;
+}
+.subrayado:hover::before {
+   width: 100%;
+}

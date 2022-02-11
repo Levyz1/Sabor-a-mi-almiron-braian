@@ -1,0 +1,36 @@
+
+
+
+ .catering{
+    &__productos{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 150px;
+    }
+    &__servicios{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -100px;
+    }
+    .servicios__descripcion{
+        display: flex;
+        justify-content: space-evenly;
+        transform: translate(-50px, -90px);
+        margin-bottom: 100px;
+    }
+    .parrafoServicios1{
+        transform: translate(-20px);
+    }
+    
+    .parrafoServicios2{
+        transform: translate(-80px);
+    }
+    
+    .parrafoServicios3{
+        transform: translate(-30px);
+    }
+    
+    .parrafoServicios4{
+        transform: translate(60px);
+    }
+ }
