@@ -58,11 +58,15 @@ nav img {
 }
 
 .title {
-  color: black;
+  color: brown;
   text-align: center;
   margin: 50px;
   text-transform: uppercase;
   font-size: 40px;
+}
+
+* {
+  color: brown;
 }
 
 .productos__img {
@@ -158,87 +162,13 @@ h2 {
 }
 
 .footer {
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(pink));
   background-image: linear-gradient(to bottom, white, pink);
-  height: 300px;
-  margin-top: 150px;
-  justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__ul {
-  text-decoration: none;
-}
-
-.footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translate(-150px);
-          transform: translate(-150px);
-  list-style: none;
-  font-size: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  .footer__nav {
-    -webkit-transform: translate(130px);
-            transform: translate(130px);
-  }
-}
-
-.footer__nav a {
-  color: black;
-}
-
-@media screen and (max-width: 768px) {
-  .footer__logo {
-    display: none;
-  }
-}
-
-.footer .footer__redes img {
-  -webkit-transform: translate(150px);
-          transform: translate(150px);
-}
-
-@media screen and (max-width: 768px) {
-  .footer .footer__redes img {
-    display: none;
-  }
-}
-
-.footer a {
-  list-style: decimal;
+  border: 1px solid black;
 }
 
 #mainPasteles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  padding-left: 150px;
+  margin: 50px;
 }
 
 .card-title {
